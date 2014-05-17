@@ -4,10 +4,18 @@ html{
 body{
     padding:0px;
     height:100%;
+    color:#333;
 }
 
 .header{
     margin-bottom: 0px;
+    font-size:16px;
+    font-weight: bold;
+    background: #FFF;
+}
+.header ul{
+    margin-top:14px;
+    font-family: 'Roboto', sans-serif;
 }
 .container-fluid{
     padding:0px;
@@ -18,10 +26,17 @@ body{
     height: 100%;
 }
 
-
 .home-tab{
     height:250px;
 }
 #home-tab-cars{
-    
+
+}
+
+.footer{
+    background: #FFF;
+}
+
+a{
+    color:#666;
 }
