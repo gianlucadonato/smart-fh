@@ -15,6 +15,8 @@
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/custom_style.css">
+    <link rel="stylesheet" href="styles/custom_style2.css">
     <!-- endbuild -->
   </head>
   <body ng-app="smartApp">
@@ -22,7 +24,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="container-fluid">
+    <div id="site_wrapper" class="container-fluid">
         <div ng-include="'views/header.html'"></div>
             <!-- Add your site or application content here -->
             <div ng-view=""></div>
@@ -72,8 +74,8 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/mainCtrl.js"></script>
-        <script src="scripts/controllers/carsCtrl.js"></script>
-        <script src="scripts/controllers/designersCtrl.js"></script>
+        <script src="scripts/controllers/carListCtrl.js"></script>
+        <script src="scripts/controllers/designerListCtrl.js"></script>
         <script src="scripts/controllers/contestsCtrl.js"></script>
         <script src="scripts/controllers/mySmartCtrl.js"></script>
         <!-- endbuild -->
