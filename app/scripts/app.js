@@ -18,6 +18,10 @@ angular
         templateUrl: 'views/car_list.html',
         controller: 'CarListCtrl'
       })
+      .when('/cars/:id', {
+        templateUrl: 'views/car_details.html',
+        controller: 'CarListCtrl'
+      })
       .when('/designers', {
         templateUrl: 'views/designer_list.html',
         controller: 'DesignerListCtrl'
