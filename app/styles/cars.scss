@@ -1,7 +1,45 @@
 .aside {
 	height: 100%;
+	border-right: 2px solid #eee;
 	.aside-content {
-		border-right: 2px solid #eee;
 		height: 100%;
 	} 
+}
+.checkboxes {
+	list-style: none;
+	padding: 0;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(/images/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(/images/check_radio_sheet.png) -19px top no-repeat;
+}
+.cars-list {
+	padding: 30px;
+	a {
+		display: block;
+		float: left;
+		height: 150px;
+		margin: 20px;
+	}
+}
+.car-box {
+	width: 200px;
+	background: #eee;
+	border: 1px solid #eee;
+	text-align: center;
+	img {
+		width: 100%;
+	}
 }
