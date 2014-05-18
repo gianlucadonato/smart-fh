@@ -1,13 +1,13 @@
-<div class="header navbar-fixed-top">  
-    <div id="" class="pull-left" style="margin-right: 30px;">
-        <img src="/images/home-page/smart-logo.jpg" width="200px" class="" alt="Smart logo">
+<div id="header" ng-controller="menuCtrl" class="header navbar-fixed-top">  
+    <div class="pull-left" style="margin-right:30px;">
+        <img src="/images/home-page/smart-logo.jpg" width="200" alt="Smart logo"/>
     </div>
 	<ul class="nav nav-pills pull-left">
-		<li><a ng-href="/">Home</a></li>
-		<li><a ng-href="#/cars">Cars</a></li>
-		<li><a ng-href="#/designers">Designers</a></li>
-		<li><a ng-href="#/contests">Contest</a></li>
-		<li><a ng-href="#my-smart">My Smart</a></li>
+		<li><a ng-class="{'activ':isMenuItemActive('home')}" class="" ng-href="/#home">Home</a></li>
+		<li><a ng-class="{'activ':isMenuItemActive('cars')}" ng-href="#/cars">Le smart</a></li>
+		<li><a ng-class="{'activ':isMenuItemActive('artists')}" ng-href="#/artists">Artisti</a></li>
+		<li><a ng-class="{'activ':isMenuItemActive('contests')}"ng-href="#/contests">Contest</a></li>
+		<li><a ng-class="{'activ':isMenuItemActive('my_smart')}" ng-href="#/my_smart">My Smart</a></li>
 	</ul>
   	<div class="clearfix"></div>
 </div>

@@ -10,7 +10,7 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/home', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
@@ -18,9 +18,9 @@ angular
         templateUrl: 'views/car_list.html',
         controller: 'CarListCtrl'
       })
-      .when('/designers', {
-        templateUrl: 'views/designer_list.html',
-        controller: 'DesignerListCtrl'
+      .when('/artists', {
+        templateUrl: 'views/artist_list.html',
+        controller: 'ArtistListCtrl'
       })
       .when('/contests', {
         templateUrl: 'views/contests.html',
@@ -31,6 +31,6 @@ angular
         controller: 'MySmartCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/home'
       });
   });

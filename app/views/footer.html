@@ -1,3 +1,12 @@
 <div class="footer navbar-fixed-bottom">
-  <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+    <p class="pull-left">
+        <a ng-class="{'activ':isMenuItemActive('home')}" class="" ng-href="/#home">Home</a>
+        | <a ng-class="{'activ':isMenuItemActive('cars')}" ng-href="#/cars">Le smart</a>
+        | <a ng-class="{'activ':isMenuItemActive('artists')}" ng-href="#/artists">Artisti</a>
+        | <a ng-class="{'activ':isMenuItemActive('contests')}"ng-href="#/contests">Contest</a>
+        | <a ng-class="{'activ':isMenuItemActive('my_smart')}" ng-href="#/my_smart">My Smart</a>
+    </p>
+    <p class="pull-right">
+        <strong>Smart First hand </strong>
+    </p>
 </div>
