@@ -1,6 +1,92 @@
-<div class="cars">
-	hello
-	<div class="cars1">
-		ciao
+<div class="col-md-3 aside">
+	<h2><strong>Models</strong></h2>
+	<div class="aside-content">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3><small>Search</small></h3>
+				<div class="input-group">
+				  <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+				  <input type="text" class="form-control" placeholder="Search..">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3><small>Veichle category</small></h3>
+			</div>
+			<div class="col-sm-6">
+				<ul class="checkboxes">
+					<li><input type="checkbox" id="c1" name="cc" /><label for="c1"><span></span>BlueMotion</label></li>
+					<li><input type="checkbox" id="c2" name="cc" /><label for="c2"><span></span>Compact</label></li>
+					<li><input type="checkbox" id="c3" name="cc" /><label for="c3"><span></span>MPV</label></li>
+					<li><input type="checkbox" id="c4" name="cc" /><label for="c4"><span></span>SUV</label></li>
+					<li><input type="checkbox" id="c5" name="cc" /><label for="c5"><span></span>Sport</label></li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<ul class="checkboxes">
+					<li><input type="checkbox" id="c6" name="cc" /><label for="c6"><span></span>BlueMotion</label></li>
+					<li><input type="checkbox" id="c7" name="cc" /><label for="c7"><span></span>Compact</label></li>
+					<li><input type="checkbox" id="c8" name="cc" /><label for="c8"><span></span>MPV</label></li>
+					<li><input type="checkbox" id="c9" name="cc" /><label for="c9"><span></span>SUV</label></li>
+					<li><input type="checkbox" id="c10" name="cc" /><label for="c10"><span></span>Sport</label></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3><small>Price in EUR</small></h3>
+				<b>€ 8.900</b> 
+				<input id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> 
+				<b>€ 98.000</b>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3><small>Car mileage</small></h3>
+				<b>0</b> 
+				<input id="km-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> 
+				<b>160.000 Km</b>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3><small>First Registration</small></h3>
+				<b>2008</b> 
+				<input id="registration-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> 
+				<b>2014</b>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3><small>Only veichle with</small></h3>
+			</div>
+			<div class="col-sm-12">
+				<ul class="checkboxes">
+					<li><input type="checkbox" id="c1" name="cc" /><label for="c1"><span></span>Cambio automatico</label></li>
+					<li><input type="checkbox" id="c2" name="cc" /><label for="c2"><span></span>Fari Xeno</label></li>
+					<li><input type="checkbox" id="c3" name="cc" /><label for="c3"><span></span>Interni Pelle</label></li>
+					<li><input type="checkbox" id="c4" name="cc" /><label for="c4"><span></span>Metallizzato</label></li>
+					<li><input type="checkbox" id="c5" name="cc" /><label for="c5"><span></span>Navigatore</label></li>
+					<li><input type="checkbox" id="c5" name="cc" /><label for="c5"><span></span>Tetto Apribile</label></li>
+					<li><input type="checkbox" id="c5" name="cc" /><label for="c5"><span></span>Trazione integrale</label></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>
+<div class="col-md-9 cars-list">
+	<a href="/cars/{{car.id}}" ng-repeat="car in cars">
+		<div class="car-box">
+			<img src="{{car.image}}">
+			<label>{{car.label}}</label>
+		</div>
+	</a>
+</div>
+
+
+<script type="text/javascript">
+	$("#price-slider").slider({});
+	$("#km-slider").slider({});
+	$("#registration-slider").slider({});
+</script>

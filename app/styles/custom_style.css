@@ -5,6 +5,7 @@ body{
     padding:0px;
     height:100%;
     color:#333;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .header{
@@ -13,9 +14,8 @@ body{
     font-weight: bold;
     background: #FFF;
 }
-#header ul{
-    margin-top:16px;
-    font-family: 'Roboto', sans-serif;
+.header ul{
+    margin-top:14px;
 }
 
 #header a.activ{
